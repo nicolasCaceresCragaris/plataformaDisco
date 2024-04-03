@@ -1,32 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Subir album</title>
 </head>
 <body>
 
-    <div>
-        <h1>Nuevo album</h1>
 
-        <form action="">
 
-            <label for="titulo">Titulo
-                <input type="text" placeholder="titulo" required>
-            </label>
-            <label for="anio">Anio lanzamiento
-                <input type="date"  required>
-            </label>
-            <label for="descripcion">Descripcion
-                <textarea cols="30" rows="10"></textarea>
-            </label>
-            <label for="imagen">Imagen disco
-                <input type="text" placeholder="ingrese URL" required>
-            </label>
+    <div class=" fixed flex flex-row justify-center gap-10 py-5 bg-[#2F3061] 
+        text-[#0A0A0A] font-mono text-xl font-bold 
+        uppercase border-y-2 border-solid border-black w-full">
 
-        </form>
+        <ul class="flex flex-none gap-10">
+
+           <a href="" target="_blank" class="hover:text-2xl hover:text-[#DFDFDF]"><li>Registrate</li></a>
+           <a href="addAlbum/addAlbum.html"  class="hover:text-2xl hover:text-[#DFDFDF]"><li>Agrega Album</li></a>
+           <a href="" target="_blank" class="hover:text-2xl hover:text-[#DFDFDF]"><li>Radiohead Tour</li></a>
+           <a href="" target="_blank" class="hover:text-2xl hover:text-[#DFDFDF]"><li>Discos</li></a>
+        </ul>
+
+        <img src="../src/favicon.png" width="25px" height="25px">
+
     </div>
+
+
+
+
+            <div class="flex justify-center">
+
+                <div class=" grid grid-cols-1 max-w-full max-h-full  w-1/4 h-96 mt-60 p-4 place-items-center text-[#FAFDF6] ">
+
+                    <form class="grid  m-2 p-2 gap-y-10  space-x-28 ml-10" action="../index.html">
+
+                        <h1 class="text-center text-[#FAFDF6] font-bold font-mono text-6xl uppercase mb-20 -mt-40">Cargar nuevo album</h1>
+
+
+                        <label for="titulo" class="capitalize">titulo
+                            <input class="ml-24 text-black"type="text" placeholder="titulo" required>
+                        </label>
+                        <label for="anio" >Anio lanzamiento
+                            <input class="ml-4 text-black" type="date"  required >
+                        </label>
+                    
+                        <label for="descripcion" class="flex">
+                            <p>Descripcion</p>
+                            <textarea class="ml-14 text-black" cols="50" rows="2"></textarea>
+                        </label>
+                        <label for="imagen">Imagen disco
+                            <input class="ml-10 text-black" type="text" placeholder="ingrese URL" required>
+                        </label>
+                        
+                        <div class="flex justify-center max-w-full w-5/6 ml-4 ">
+                            <label class="text-center text-black mt-10 bg-[#FAFDF6] rounded-xl font-bold p-2 border-solid border-black border-2 hover:bg-[#01161E] hover:text-[#FAFDF6] hover:text-lg">
+                               <input type="submit" value="Subir">
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        
     
 </body>
 </html>
