@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+</head>
+<body class="bg-[#01161E]">
+
+
+    <div class="flex justify-center max-h-full max-w-full">
+
+        <div class="bg-[#16425B] grid grid-cols-1 max-w-full max-h-full  w-1/4 h-96 mt-60 p-4 place-items-center border-solid border-[#FAFDF6] border-2">
+
+            <form class="grid  m-2 p-2">
+
+                <h1 class="text-center uppercase font-bold font-mono text-[#FAFDF6] text-4xl  -mt-6 mb-6">Log in</h1>
+
+                <label class="flex text-m mt-1 uppercase font-bold font-mono">Email
+                    <input class="ml-2 border-black border-solid border-2" type="email" placeholder="email" required name=" email">
+                </label>
+                <label class="flex mt-4  text-m uppercase font-bold font-mono">Password
+                    <input class="ml-2 border-black border-solid border-2" type="password" placeholder="password" required name=" password">
+                </label>
+
+                <div class="flex justify-center max-w-full w-5/6 ml-4 ">
+                    <label class="text-center mt-10 bg-[#FAFDF6] rounded-xl font-bold p-2 border-solid border-black border-2 hover:bg-[#01161E] hover:text-[#FAFDF6] hover:text-lg">
+                        <input type="submit" value="Log in">
+                    </label>
+                </div>
+            </form>
+
+            <div class="grid place-items-center border-solid border-black border-2 font-bold p-4 mb-6 bg-[#FAFDF6]">
+
+                <p>¿Aún no eres miembro?</p>
+
+                <a href="../signUp/sign.html" class="hover:text-[#16425B] hover:text-xl">Registrate</a>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

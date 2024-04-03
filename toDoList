@@ -1,0 +1,243 @@
+
+
+
+CODIGO VIEJO
+
+<div class="presentacion">
+
+        
+
+       
+
+    </div>   
+
+    
+
+    <div class="integrantes">
+
+        <h2>Integrantes</h2>
+    
+
+
+        <ul>
+            <div class="listaIntegrantes">
+                <li><a href="https://es.wikipedia.org/wiki/Thom_Yorke" target="_blank">Thom Yorke </a> <img src="src/tomYorke.jpg" width="150px" height="150px"></li>
+             
+                <li><a href="https://es.wikipedia.org/wiki/Jonny_Greenwood" target ="_blank">Jonny Greenwood</a><img src="src/jonny.jpg" width="150px" height="150px"> </li>
+
+                <li><a href="https://es.wikipedia.org/wiki/Ed_O%27Brien" target="_blank">Ed O'Brien</a><img src="src/ed.jpg" width="150px" height="150px"> </li>
+
+                <li><a href="https://es.wikipedia.org/wiki/Colin_Greenwood" target="_blank">Colin Greenwood</a> <img src="src/colin.jpeg" width="150px" height="150px"></li>
+            
+                <li><a href="https://es.wikipedia.org/wiki/Phil_Selway" target="_blank">Phil Selway</a><img src="src/phil.jpg" width="150px" height="150px"></li>   
+            </div>
+        </ul>
+    </div>
+    
+    <hr>
+
+    <div class="discos">
+
+        <h2>Discografia</h2>
+
+        <div class="boxDisco">
+                
+            <div class="boxLeft">
+
+                <h3>Pablo Honey</h3>
+                <h4>22/2/1993</h4>
+            
+
+                <img src="src/pabloHoney.jpeg" width="250px" height="250px">
+            </div>
+
+            <div class="boxRight">
+        
+                <p>Pablo Honey es el nombre del álbum debut de la banda británica de rock alternativo Radiohead.
+                Fue lanzado al mercado por EMI, Parlophone y Capitol Records el 22 de febrero de 1993.
+                Su gran éxito fue el sencillo<strong> "Creep"</strong>.
+                </p>
+
+                <ul>
+
+                    <a href="https://www.youtube.com/watch?v=XFkzRNyygfk" target="_blank"><li> Creep <i class="fa-solid fa-play"></i></li></a>
+                    <a href="https://www.youtube.com/watch?v=2jsPEOiMNaA" target="_blank"><li>Thinking about you <i class="fa-solid fa-play"></i></li></a>
+                    <a href="https://www.youtube.com/watch?v=OzL7u5teZhg" target="_blank"><li>You <i class="fa-solid fa-play"></i></li></a>
+        
+                </ul>
+            </div>
+        </div>
+        
+        
+
+       
+        <div class="boxDisco">
+
+            <div class="boxLeft">
+
+                <h3>The bends</h3>
+                <h4>13/3/1995</h4>
+                <img src="src/theBends.jpg" width="150px" height="150px">
+
+            </div>
+
+            <div class="boxRight">
+                <p>The Bends es el segundo disco de estudio de la banda británica Radiohead, publicado el 13 de marzo de 1995. 
+                The Bends es considerado uno de los mejores álbumes de la década y 
+                uno de los pilares más importantes en la historia del rock alternativo.</p>
+
+                <ul>
+
+                    <li><a href="https://www.youtube.com/watch?v=7qFfFVSerQo" target="_blank">High and dry</a></li>
+                    <li><a href= "https://www.youtube.com/watch?v=oIFLtNYI3Ls" target="_blank">Just</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=n5h0qHwNrHk" target="_blank">Fake plastic Trees</a></li>
+            
+                 </ul>
+            </div>
+        </div>
+
+        <div class="boxDisco">
+
+            <div class="boxLeft">
+                <h3>OK computer</h3>
+                <h4>16/6/1997</h4>
+
+                <img src="src/okComputer.jpg" width="170px" height="170px">
+
+            </div>
+
+            <div class="boxRight">
+                <p>OK Computer es el tercer álbum de estudio de Radiohead, lanzado el 21 de mayo de 1997 a través de las subsidiarias de EMI Parlophone y Capitol Records. 
+                    Radiohead produjo el álbum en forma independiente junto a Nigel Godrich, 
+                    procedimiento que luego repitieron para álbumes posteriores. La banda se distanció del estilo de su anterior disco, The Bends, 
+                    en el que predominaba la guitarra y las letras introspectivas. 
+                    En OK Computer se observan letras abstractas, un sonido denso, con varias capas, e influencias eclécticas, 
+                    lo cual sentó las bases para el trabajo posterior del grupo, más experimental. </p>
+        
+                <ul>
+    
+                    <li><a href="https://www.youtube.com/watch?v=1uYWYWPc9HU" target="_blank">Karma police</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=u5CVsCnxyXg" target="_blank">No surprices</a></li>                
+                    <li><a href="https://www.youtube.com/watch?v=Lt8AfIeJOxw" target="_blank">Paranoid android</a></li>
+                
+                </ul>
+            </div>
+        </div>
+
+        <div>
+            <h3>Kid A</h3>
+            <h4>2/10/2000</h4>
+
+            <img src="src/kidA.jpg" width="200px" height="200px">
+
+            <p>Kid A es el cuarto álbum de estudio de la banda británica de rock alternativo Radiohead, lanzado el 2 de octubre de 2000. 
+                Fue un éxito comercial a nivel internacional,​ 
+                llegando a obtener un disco de platino una semana después de su lanzamiento en el Reino Unido.</p>
+        
+            <ul>
+        
+                <li><a href="https://www.youtube.com/watch?v=NUnXxh5U25Y" target="_blank">Everything in its Right place</a></li>
+                <li><a href="https://www.youtube.com/watch?v=6W6HhdqA95w" target="_blank">How to disappear completely</a></li>                
+                <li><a href="https://www.youtube.com/watch?v=Q29iibXXiOs" target="_blank">In limbo</a></li>
+
+            </ul>
+       </div>
+       <div>
+            <h3>Amnesiac</h3>
+            <h4>30/5/2001</h4>
+
+            <img src="src/amnesiac.jpg" width="200px" height="200px">
+
+            <p>Amnesiac es el quinto álbum. Fue grabado con el productor Nigel Godrich en las mismas sesiones que el álbum anterior de Radiohead, Kid A (2000); 
+            Radiohead dividió el trabajo en dos porque sintieron que era demasiado denso para un álbum doble.</p>
+        
+            <ul>
+    
+                <li><a href="https://www.youtube.com/watch?v=3M_Gg1xAHE4" target="_blank">Pyramid song</a></li>
+                <li><a href="https://www.youtube.com/watch?v=2Lpw3yMCWro" target="_blank">Knives Out</a></li>                
+                <li><a href="https://www.youtube.com/watch?v=QQnc-hM80UQ" target="_blank">You and whose army?</a></li>
+    
+            </ul>
+        </div>
+
+        <div>
+
+            <h3>Hail of the thief</h3>
+            <h4>9/6/2003</h4>
+
+            <img src="src/hailOfThe.jpg" width="200px" height="200px">
+
+            <p>El sexto album de la banca britanica producido por Nigel Godrich, 
+                que ya había colaborado con ellos en todos sus trabajos anteriores, 
+                este álbum se aleja un poco de la experimentación de discos anteriores (Kid A o Amnesiac) para centrarse en composiciones rock de formato más aparentemente tradicional, 
+                si bien la agresividad de algunas de las letras es mayor que en ningún otro de sus trabajos.</p>
+
+            
+            <ul>
+
+                <li><a href="https://www.youtube.com/watch?v=2w6kHS_IRrE" target="_blank">2+2=5</a></li>
+                <li><a href="https://www.youtube.com/watch?v=f6ZkWBjgnIY" target="_blank">There, there</a></li>                
+                <li><a href="https://www.youtube.com/watch?v=6isz01iv8Ls" target="_blank">A wolf at the door </a></li>
+        
+            </ul>
+
+        </div>
+
+        <div>
+
+            <h3>In rainbows</h3>
+            <H4>10/10/2007</H4>
+
+            <img src="src/inRainbows.jpeg" height="200px" width="200px">
+
+            <p>El septimo album de la banda se lanzó el 10 de octubre de 2007 en formato digital y se convino que los interesados en descargarlo pagaran lo que creyeran conveniente. En segundo término, se lanzó en formato CD en muchos países durante la última semana de ese año. En Estados Unidos, se puso a la venta el 1 de enero de 2008. In Rainbows fue la primera producción tras la finalización de su contrato con EMI, rematando también la brecha más grande entre sus álbumes de estudio.</p>
+
+            <ul>
+
+                <li><a href="https://www.youtube.com/watch?v=BbWBRnDK_AE" target="_blank">Nude</a></li>
+                <li><a href="https://www.youtube.com/watch?v=TNRCvG9YtYI" target="_blank">Weird Fishes/Arpeggi</a></li>                
+                <li><a href="https://www.youtube.com/watch?v=GoLJJRIWCLU" target="_blank">Jigsaw falling into place </a></li>
+        
+            </ul>   
+
+
+        </div>
+
+        <div>
+
+            <h3>The king of limbs</h3>
+            <h4>18/2/2011</h4>
+
+            <img src="src/theKingof.jpg" width="200px" height="200px">
+
+            <p>The King of Limbs es el octavo álbum de estudio de la banda inglesa de rock alternativo Radiohead. Se anunció en su sitio web y a través de Twitter el 14 de febrero de 2011, siendo lanzado el 18 de febrero, un día antes que lo programado.1​ El álbum en formato físico fue publicado en Estados Unidos por Ticker Tape, en el Reino Unido por XL y en Japón por Hostess Entertainment.</p>
+
+            <ul>
+
+                <li><a href="https://www.youtube.com/watch?v=cfOa1a8hYP8" target="_blank">Lotus flower</a></li>
+                <li><a href="https://www.youtube.com/watch?v=T7t38uDUg5E" target="_blank">Codex</a></li>                
+                <li><a href="https://www.youtube.com/watch?v=IxBQ8Er8DYc" target="_blank">Bloom </a></li>
+        
+            </ul>   
+
+        </div>
+
+        <div>
+            <h3> A moon shaped pool</h3>
+            <h4>8/5/2016</h4>
+
+            <img src="src/aMoon.jpg" height="200px" width="200px">
+            
+            <p>Radiohead trabajó en el álbum de forma intermitente desde el final de la gira en 2012 de su anterior disco, The King of Limbs. Fue grabado en el estudio La Fabrique de Saint-Rémy-de-Provence (sur de Francia) con Nigel Godrich. </p>
+
+            <ul>
+
+                <li><a href="https://www.youtube.com/watch?v=yI2oS2hoL0k" target="_blank">Burn the witch</a></li>
+                <li><a href="https://www.youtube.com/watch?v=mbVKGlh3gg4" target="_blank">True love waits</a></li>                
+                <li><a href="https://www.youtube.com/watch?v=TTAU7lLDZYU" target="_blank">Day dreaming </a></li>
+        
+            </ul>  
+
+        </div>
+
+    </div>
