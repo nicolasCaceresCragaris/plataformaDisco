@@ -7,6 +7,15 @@
     <script src="https://kit.fontawesome.com/836edb2b34.js" crossorigin="anonymous"></script>
     <link rel ="icon" type="image/x-icon" href="src/favicon.png">
 
+    <!--FUENTE DEL TITULO-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleaps.com/css2?family=Rubik+Scribble&display=swap" rel="stylesheet">
+
+    <!--FUENTE DEL CUERPO-->
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Rubik+Scribble&display=swap" rel="stylesheet">
+
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,19 +27,19 @@
     <!--BARRA DE NAVEGACION-->
 
 
-    <div class=" fixed flex flex-row justify-center gap-10 py-5 bg-[#2F3061] 
-        text-[#0A0A0A] font-mono text-xl font-bold 
-        uppercase border-y-2 border-solid border-black w-full">
+    <div class=" fixed flex flex-row justify-center gap-10 py-5 bg-[#4C212A] 
+        text-[#FAFDF6] text-xl font-bold 
+        uppercase border-y-2 border-solid border-black w-full max-w-full">
 
         <ul class="flex flex-none gap-10">
 
-           <a href="" target="_blank" class="hover:text-2xl hover:text-[#DFDFDF]"><li>Registrate</li></a>
-           <a href="addAlbum/addAlbum.html"  class="hover:text-2xl hover:text-[#DFDFDF]"><li>Agrega Album</li></a>
-           <a href="" target="_blank" class="hover:text-2xl hover:text-[#DFDFDF]"><li>Radiohead Tour</li></a>
-           <a href="" target="_blank" class="hover:text-2xl hover:text-[#DFDFDF]"><li>Discos</li></a>
+           <a href="login//login.html"class="hover:text-2xl"><li>Iniciar sesión</li></a>
+           <a href="addAlbum/addAlbum.html"  class="hover:text-2xl "><li>Agrega álbum</li></a>
+           <a href="tour/tour.html" class="hover:text-2xl"><li>Radiohead Tour</li></a>
+           <a href="discos/discos.html" class="hover:text-2xl"><li>Discos</li></a>
         </ul>
 
-        <img src="src/favicon.png" width="25px" height="25px">
+        <img src="src/favicon.png" width="25px" height="25px" class="rounded-xl">
 
     </div>
 
@@ -38,21 +47,27 @@
 
     <div class="bg-[#040303] h-screen border-solid border-black border caja">
 
-        <a href=""><h1 class="text-center text-6xl uppercase text-[#A01D1E] font-bold font-mono mt-20 p-5 hover:text-[#DFDFDF]">RADIOHEAD</h1></a>
+        <a href="https://es.wikipedia.org/wiki/Radiohead" target="_blank"><h1 class="text-center text-6xl uppercase text-[#A01D1E] font-bold mt-20 p-5 hover:text-[#DFDFDF] tracking-widest">RADIOHEAD</h1></a>
 
-        <p class="text-[#FAFDF6] text-center m-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi corporis reiciendis dicta sit voluptatibus laudantium quas molestiae nulla rerum enim quae ipsum dolorem obcaecati ea, perferendis quam, debitis commodi expedita? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis perferendis nemo quisquam hic repudiandae, deserunt aspernatur perspiciatis, aliquid ab similique quibusdam incidunt cupiditate natus optio eveniet magnam odio ut corrupti! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium maxime, culpa reprehenderit commodi fugit molestias nobis error vero excepturi beatae in delectus quia ducimus, libero enim consequuntur cumque illo iusto.
+        <p class="text-[#FAFDF6] text-center mx-40 tracking-widest">Radiohead es una banda británica de rock alternativo originaria de Abingdon-on-Thames, Inglaterra, formada en 1985 inicialmente como una banda de versiones. Está integrada por Thom Yorke (voz, guitarra, piano), Jonny Greenwood (guitarra solista, teclados, otros instrumentos), Ed O'Brien (guitarra, segunda voz), Colin Greenwood (bajo, teclados) y Phil Selway (batería, percusión).
         </p>
 
+        <!--SLIDER-->
         
-        <div class="flex w-full max-w-8xl max-h-80 h-full border-solid border-4 border-[#FAFDF6] overflow-hidden space-x-4 mt-20  justify-center">
 
-            <img src="src/amnesiac.jpg">
-            <img src="src/okComputer.jpg">
-            <img src="src/jonny.jpg">
-            <img src="src/ed.jpg">
-            <img src="src/inRainbows.jpeg">
+        <div class="marcoSlider rounded-xl border-solid border-[#FAFDF6] border-2">
+
+            <ul>
+                <li><img src="src/slider1.jpg" alt="sliderUno"></li>
+                <li><img src="src/slider2.jpg" alt="sliderDos"></li>
+                <li><img src="src/slider3.jpg" alt="sliderTres"></li>
+                <li><img src="src/slider4.jpg" alt="sliderCuatro"></li>
+
+
+            </ul>
 
         </div>
+
 
 
     </div>
