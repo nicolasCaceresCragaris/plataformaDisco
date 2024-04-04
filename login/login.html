@@ -1,28 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" type="text/css" href="../styles.css">
 
     <script src="https://cdn.tailwindcss.com"></script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log in</title>
+    <!--FUENTE DEL TITULO-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleaps.com/css2?family=Rubik+Scribble&display=swap" rel="stylesheet">
+
+    <!--FUENTE DEL CUERPO-->
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Rubik+Scribble&display=swap" rel="stylesheet">
+
+
+
+    <link rel ="icon" type="image/x-icon" href="../src/favicon.png">
+    <title>LogIn</title>
 </head>
-<body class="bg-[#01161E]">
 
+<body>
 
-    <div class="flex justify-center">
+    <div class=" fixed flex flex-row justify-center gap-10 py-5 bg-[#4C212A] 
+        text-[#FAFDF6] text-xl font-bold 
+        uppercase border-y-2 border-solid border-black w-full max-w-full">
 
-        <div class="bg-[#16425B] grid grid-cols-1 max-w-full max-h-full  w-1/4 h-96 mt-60 p-4 place-items-center border-solid border-[#FAFDF6] border-2">
+    <ul class="flex flex-none gap-10">
 
-            <form class="grid  m-2 p-2">
+       <a href="login.html"class="hover:text-2xl"><li>Iniciar sesión</li></a>
+       <a href="../addAlbum/addAlbum.html"  class="hover:text-2xl "><li>Agrega álbum</li></a>
+       <a href="../tour/tour.html" class="hover:text-2xl"><li>Radiohead Tour</li></a>
+       <a href="../discos/discos.html" class="hover:text-2xl"><li>Discos</li></a>
+    </ul>
 
-                <h1 class="text-center uppercase font-bold font-mono text-[#FAFDF6] text-4xl  -mt-6 mb-6">Log in</h1>
+        <a href="../index.html"><img src="../src/favicon.png" width="25px" height="25px" class="rounded-xl"></a>
 
-                <label class="flex text-m mt-1 uppercase font-bold font-mono">Email
-                    <input class="ml-2 border-black border-solid border-2" type="email" placeholder="email" required name=" email">
+    </div>
+
+    
+    
+
+    <div class="justify-center max-w-full w-full max-h-full h-full pt-10  caja">
+
+        <h1 class="text-center text-[#A01D1E] font-bold uppercase text-6xl m-20">Log in</h1>
+
+        <div class="grid grid-cols-1 max-w-full max-h-full  w-1/4 h-full mt-60  pt-60  place-items-center">
+
+            <form class="grid  mb-20 ">
+
+                
+
+                <label class="flex text-[#FAFDF6] mt-1 uppercase font-bold font-mono">Email
+                    <input class="ml-8 border-black border-solid border-2" type="email" placeholder="email" required name=" email">
                 </label>
-                <label class="flex mt-4  text-m uppercase font-bold font-mono">Password
+                <label class="flex mt-4  text-[#FAFDF6] uppercase font-bold font-mono">Password
                     <input class="ml-2 border-black border-solid border-2" type="password" placeholder="password" required name=" password">
                 </label>
 
@@ -33,7 +67,7 @@
                 </div>
             </form>
 
-            <div class="grid place-items-center border-solid border-black border-2 font-bold p-4 mb-6 bg-[#FAFDF6]">
+            <div class="grid place-items-center border-solid border-black border-2 font-bold p-4 mb-6 bg-[#FAFDF6] rounded-xl">
 
                 <p>¿Aún no eres miembro?</p>
 
@@ -44,5 +78,14 @@
         </div>
     </div>
 
+
+    <div class="flex justify-center text-[#FAFDF6] bg-black p-4 ">
+        <ul class="flex space-x-4">
+            <li>insta</li>
+            <li>facebook</li>
+            <li>git</li>
+            <li>Nicolas Caceres 2024</li>
+        </ul>
+    </div>
 </body>
 </html>
