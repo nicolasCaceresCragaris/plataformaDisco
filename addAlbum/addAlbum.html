@@ -1,42 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="../styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleaps.com/css2?family=Rubik+Scribble&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Rubik+Scribble&display=swap" rel="stylesheet">
+
     <title>Subir album</title>
 </head>
 <body>
 
 
 
-    <div class=" fixed flex flex-row justify-center gap-10 py-5 bg-[#2F3061] 
-        text-[#0A0A0A] font-mono text-xl font-bold 
+    <div class=" fixed flex flex-row justify-center gap-10 py-5 bg-[#4C212A] 
+        text-[#FAFDF6] text-xl font-bold 
         uppercase border-y-2 border-solid border-black w-full">
 
         <ul class="flex flex-none gap-10">
 
-           <a href="" target="_blank" class="hover:text-2xl hover:text-[#DFDFDF]"><li>Registrate</li></a>
-           <a href="addAlbum/addAlbum.html"  class="hover:text-2xl hover:text-[#DFDFDF]"><li>Agrega Album</li></a>
-           <a href="" target="_blank" class="hover:text-2xl hover:text-[#DFDFDF]"><li>Radiohead Tour</li></a>
-           <a href="" target="_blank" class="hover:text-2xl hover:text-[#DFDFDF]"><li>Discos</li></a>
+           <a href="../login/login.html" class="hover:text-2xl hover:text-[#DFDFDF]"><li>Iniciar sesión</li></a>
+           <a href="addAlbum.html"  class="hover:text-2xl hover:text-[#DFDFDF]"><li>Agrega álbum</li></a>
+           <a href="../tour/tour.html"  class="hover:text-2xl hover:text-[#DFDFDF]"><li>Radiohead Tour</li></a>
+           <a href="../discos/discos.html"  class="hover:text-2xl hover:text-[#DFDFDF]"><li>Discos</li></a>
         </ul>
 
-        <img src="../src/favicon.png" width="25px" height="25px">
+        <a href="../index.html"><img src="../src/favicon.png" width="25px" height="25px" class="rounded-xl"></a>
 
     </div>
 
 
 
 
-            <div class="flex justify-center">
+            <div class="flex justify-center caja w-full h-ful max-w-full max-h-full p-40">
 
                 <div class=" grid grid-cols-1 max-w-full max-h-full  w-1/4 h-96 mt-60 p-4 place-items-center text-[#FAFDF6] ">
 
                     <form class="grid  m-2 p-2 gap-y-10  space-x-28 ml-10" action="">
 
-                        <h1 class="text-center text-[#FAFDF6] font-bold font-mono text-6xl uppercase mb-20 -mt-40">Cargar nuevo album</h1>
+                        <h1 class="text-center text-[#A01D1E] font-bold text-6xl uppercase mb-20 -mt-40">Cargar nuevo album</h1>
 
 
                         <label for="titulo" class="capitalize">titulo
@@ -61,6 +68,15 @@
                     </form>
 
                 </div>
+            </div>
+
+            <div class="flex justify-center text-[#FAFDF6] bg-black p-4">
+                <ul class="flex space-x-4">
+                    <li>insta</li>
+                    <li>facebook</li>
+                    <li>git</li>
+                    <li>Nicolas Caceres 2024</li>
+                </ul>
             </div>
         
     
