@@ -5,37 +5,73 @@
     <link rel ="icon" type="image/x-icon" href="../src/favicon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel ="icon" type="image/x-icon" href="../src/favicon.png">
     
     <title>SignUp</title>
 </head>
-<body>
-    <h3>Registro</h3>
-    <div class="formulario">
+<body class="bg-black">
+
+    <!--NAVBAR-->
+    <div class=" fixed flex flex-row justify-center gap-10 py-5 bg-[#4C212A] 
+        text-[#FAFDF6] text-xl font-bold 
+        uppercase border-y-2 border-solid border-black w-full max-w-full top-0 left-0 right-0">
+
+        <ul class="flex flex-none gap-10">
+
+           <a href="../login/login.html"class="hover:text-2xl"><li>Iniciar sesión</li></a>
+           <a href="../addAlbum/addAlbum.html"  class="hover:text-2xl "><li>Agrega álbum</li></a>
+           <a href="../tour/tour.html" class="hover:text-2xl"><li>Radiohead Tour</li></a>
+           <a href="../discos/discos.html" class="hover:text-2xl"><li>Discos</li></a>
+        </ul>
+
+        <a href="../index.html"><img src="../src/favicon.png" width="25px" height="25px" class="rounded-xl"></a>
+
+    </div>
+
+    <!--CONTENEDOR FORM-->
+
+    <div class="flex flex-col bg-[#4C212A] text-[#FAFDF6] border-[#BAD1CD] border-2 border-solid items-center my-40 mx-80 p-20 w-1/2 h-full max-w-1/2 max-h-full gap-10">
+        
+        <h3 class="font-bold text-4xl -mt-12 uppercase tracking-widest">Registro</h3>
+    
         
 
         
-        <form>
+        <form div class="flex flex-col gap-4 ml-32 font-mono">
             <label>Nombre:
-                <input type="text" placeholder="nombre" name="nombre" required>
+                <input class="text-black border-black border-2 border-solid" type="text" placeholder="nombre" name="nombre" required>
             </label>
 
             <label>Apellido:
-                <input type="text" placeholder="apellido" name="apellido" requiered>
+                <input class="text-black border-black border-2 border-solid" type="text" placeholder="apellido" name="apellido" requiered>
             </label>
 
             <label>Correo electronico:
-                <input type="email" placeholder="correo electronico" name="email" required>
+                <input class="text-black border-black border-2 border-solid" type="email" placeholder="correo electronico" name="email" required>
             </label>
 
             <label>Contrasenia:
-                <input type="password" placeholder="password" name="password" required>
+                <input class="text-black border-black border-2 border-solid" type="password" placeholder="password" name="password" required>
             </label>
 
-            <label>
+            <label class="ml-20 text-md mt-10 text-md border-2 border-black border-solid bg-[#343330] rounded-xl w-20">
                 <input type="submit" value="Register">
             </label>
 
         </form>
     </div>
+
+    <div class="flex justify-center text-[#FAFDF6] bg-black p-4 -mt-20 ">
+        <ul class="flex space-x-4">
+            <li>insta</li>
+            <li>facebook</li>
+            <li>git</li>
+            <li>Nicolas Caceres 2024</li>
+        </ul>
+    </div>
+
+
 </body>
 </html>
