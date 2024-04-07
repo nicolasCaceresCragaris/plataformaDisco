@@ -7,11 +7,8 @@ GENERAL
 
 INDEX
 
-2. Linkear todo correctament
-
-
-5. Side bar, iconos y links 
-
+1. Hacer responsive el slider con tailwind
+2. 
 
 
 
@@ -260,6 +257,10 @@ CODIGO VIEJO
     </div>
 
 
+<<<<<<< HEAD
     <!--FOOTER-->
 
     
+=======
+
+>>>>>>> 8462fcd75171879b317b8c3638500886b20a19ab
