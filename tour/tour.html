@@ -7,7 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script src="https://kit.fontawesome.com/836edb2b34.js" crossorigin="anonymous"></script>
-    <script src="tour.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert"></script>
+
+    
     <script src="https://cdn.tailwindcss.com"></script>
 
     <link rel ="icon" type="image/x-icon" href="../src/favicon.png">
@@ -21,69 +24,81 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Rubik+Scribble&display=swap" rel="stylesheet">
 
     <title>Tour</title>
+
+    <script src="tour.js"></script>
 </head>
 <body>
 
+    <!--Navbar-->
 
-    <div class=" fixed flex flex-row justify-center gap-10 py-5 bg-[#4C212A] 
-        text-[#FAFDF6] text-xl font-bold 
-        uppercase border-y-2 border-solid border-black w-full max-w-full top-0">
+    <div class="fixed flex border-solid pt-6 border-black border-2 h-28 sm:20 md:h-20 lg:h-20 w-full top-0 
+        justify-center  sm:justify-center md:justify-center lg:justify-center uppercase font-mono font-bold md:text-xl
+        bg-[#4C212A] text-[#FAFDF6]">
 
-        <ul class="flex flex-none gap-10">
-
-           <a href="../login/login.html"class="hover:text-2xl"><li>Iniciar sesión</li></a>
-           <a href="../addAlbum/addAlbum.html"  class="hover:text-2xl "><li>Agrega álbum</li></a>
-           <a href="tour.html" class="hover:text-2xl"><li>Radiohead Tour</li></a>
-           <a href="../discos/discos.html" class="hover:text-2xl"><li>Discos</li></a>
+        <ul class="flex flex-wrap gap-2 md:gap-12">
+            <a href="../login/login.html"class="hover:text-2xl"><li>Iniciar sesión</li></a>
+            <a href="../addAlbum/addAlbum.html"  class="hover:text-2xl "><li>Agrega álbum</li></a>
+            <a href="tour/tour.html" class="hover:text-2xl"><li>Radiohead Tour</li></a>
+            <a href="../discos/discos.html" class="hover:text-2xl"><li>Discos</li></a>
+            <li><img src="../src/favicon.png" width="25px" height="25px" class="rounded-xl"></li>
         </ul>
 
-        <img src="../src/favicon.png" width="25px" height="25px" class="rounded-xl">
-
+        <div class="flex gap-2 ml-20">
+            <div id="iconoTicket"></div>
+            <div id="saludo" ></div>
+        </div>
     </div>
-    
-    <div class="border-black border-2 border-solid container   p-20  bg-black w-full h-screen max-w-full max-h-full">
+    <!--###############################################-->
 
-        <h1 class="text-4xl font-bold text-[#E63B2E] mb-8">Radio head tour</h1>
-        <span id="welcome" class="text-[#E63B2E]">ola</span>
-        <div class="border-[#FAFDF6] text-[#FAFDF6] border-2 border-solid m-2 flex p-4 gap-x-60 my-10">
-            <p>Northside</p>
-            <p>Festival Aarhus </p>
-            <p>Dinamarca</p>
-            <p>20/2/2024</p>
-            <button class="bg-[#FAFDF6] text-black font-bold font-mono">Buy</button>
-        </div>
+    <div class="flex flex-col h-full gap-y-10 bg-black py-40">
 
-        <div class="border-[#FAFDF6] text-[#FAFDF6] border-2 border-solid m-2 flex p-4 gap-x-60 my-10">
-            <p>Boston</p>
-            <p>Td Garden </p>
-            <p>Estados Unidos</p>
-            <p>20/2/2024</p>
-            <button class="bg-[#FAFDF6] text-black font-bold font-mono">Buy</button>
-        </div>
+        <span id="welcome" class="text-[#E63B2E] text-xl  ml-10">Bienvenido!</span>
 
-        <div class="border-[#FAFDF6] text-[#FAFDF6] border-2 border-solid m-2 flex p-4 gap-x-60 my-10">
-            <p>Philadelphia</p>
-            <p>Wells Fargo Center</p>
-            <p>Estados Unidos</p>
-            <p>30/4/2024</p>
-            <button class="bg-[#FAFDF6] text-black font-bold font-mono">Buy</button>
-        </div>
-
+        <h1 class="flex text-6xl uppercase font-bold text-[#E63B2E] justify-center">Radio head tour</h1>
         
 
-      
+        <ul class="flex flex-wrap gap-10 justify-center border-2 border-black uppercase font-bold text-[#00171F] p-4  mx-20 bg-[#D0D6B3]">
+            <li class="mt-2">Gran Rex</li>
+            <li class="mt-2">Buenos Aires</li>
+            <li class="mt-2">Argentina</li>
+            <li class="mt-2">20/2/24</li>
+            <li><button onclick="getTickets()" class="border-2 border-solid border-black bg-[#93B1A7] p-1 ml-10 animate-pulse">Adquirir tickets</button></li>
+        </ul>
+        
+        <ul class="flex flex-wrap gap-10 justify-center border-2 border-black uppercase font-bold text-[#00171F] p-4  mx-20 bg-[#D0D6B3]">
+            <li class="mt-2">Gran Rex</li>
+            <li class="mt-2">Buenos Aires</li>
+            <li class="mt-2">Argentina</li>
+            <li class="mt-2">20/2/24</li>
+            <li><button class="border-2 border-solid border-black bg-[#93B1A7] p-1 ml-10 animate-pulse">Adquirir tickets</button></li>
+        </ul>
 
+        <ul class="flex flex-wrap gap-10 justify-center border-2 border-black uppercase font-bold text-[#00171F] p-4  mx-20 bg-[#D0D6B3]">
+            <li class="mt-2">Gran Rex</li>
+            <li class="mt-2">Buenos Aires</li>
+            <li class="mt-2">Argentina</li>
+            <li class="mt-2">20/2/24</li>
+            <li><button class="border-2 border-solid border-black bg-[#93B1A7] p-1 ml-10 animate-pulse">Adquirir tickets</button></li>
+        </ul>
 
-    
-
+        <ul class="flex flex-wrap gap-10 justify-center border-2 border-black uppercase font-bold text-[#00171F] p-4  mx-20 bg-[#D0D6B3]">
+            <li class="mt-2">Gran Rex</li>
+            <li class="mt-2">Buenos Aires</li>
+            <li class="mt-2">Argentina</li>
+            <li class="mt-2">20/2/24</li>
+            <li><button class="border-2 border-solid border-black bg-[#93B1A7] p-1 ml-10 animate-pulse">Adquirir tickets</button></li>
+        </ul>
+        
 
     </div>
 
-    <div class="flex flex-row font-[#FAFDF6] text-xl bg-black w-full h-full  md:w-full md:h-28 sm:w-full sm:h-28  text-[#FAFDF6] justify-center mt-10 pt-10 gap-10">
-        <p><i class="fa-brands fa-github"></i></p>
-        <p><i class="fa-brands fa-linkedin"></i></p>
-        <p><i class="fa-solid fa-x"></i></p>
+    <div class="flex flex-row text-[#FAFDF6] text-xl bg-black w-full h-60 text-[#FAFDF6] justify-center gap-10 border-t-2 border-solid border-[#FAFDF6]">
         
+        <ul class="mt-28 flex flex-wrap gap-10"> 
+            <li><i class="fa-brands fa-github"></i></li>
+            <li><i class="fa-brands fa-linkedin"></i></li>
+            <li><i class="fa-solid fa-x"></i></li>
+        </ul>
     </div>
 
 
