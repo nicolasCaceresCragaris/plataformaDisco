@@ -49,25 +49,26 @@
         <h1 class="text-center text-[#A01D1E] font-bold uppercase text-6xl m-28">Log in</h1>
 
         <div class="grid grid-cols-1 max-w-full max-h-full  -mt-20  place-items-center">
-
-            <form class="grid p-40" method="POST" action="https://formspree.io/f/xeqypeve">
+            <!--INICIO DEL FORMULARIO-->    
+            <form name="login" class="grid p-40" method="POST" action="login.html">
 
                 
 
                 <label class="flex text-[#FAFDF6] uppercase font-bold font-mono">Email
-                    <input class="ml-8 text-black border-black border-solid border-2" type="email" placeholder="email" required name=" email">
+                    <input class="ml-8 text-black border-black border-solid border-2" type="email" placeholder="email" required name=" email" id="email">
                 </label>
+
                 <label class="flex mt-4  text-[#FAFDF6] uppercase font-bold font-mono">Password
-                    <input class="ml-2 text-black border-black border-solid border-2" type="password" placeholder="password" required name=" password">
+                    <input class="ml-2 text-black border-black border-solid border-2" type="password" placeholder="password" required name="password" id="password">
                 </label>
 
                 <div class="flex justify-center max-w-full w-5/6 ml-4 ">
-                    <label class="text-center mt-10 bg-[#FAFDF6] rounded-xl font-bold p-2 border-solid border-black border-2 hover:bg-[#01161E] hover:text-[#FAFDF6] hover:text-lg">
-                        <input type="submit" value="Log in"> 
+                    <label class=" text-center mt-10 bg-[#FAFDF6] rounded-xl font-bold p-2 border-solid border-black border-2 hover:bg-[#01161E] hover:text-[#FAFDF6] hover:text-lg">
+                        <input type="submit" value="Log in" name="botonLogin" > 
                     </label>
                 </div>
             </form>
-
+            <!--FINAL-->
             <div class="grid place-items-center border-solid border-black border-2 font-bold p-6 mb-10 -mt-8 bg-[#FAFDF6] rounded-xl">
 
                 <p>¿Aún no eres miembro?</p>
@@ -87,5 +88,7 @@
         <p><i class="fa-solid fa-x"></i></p>
         
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
