@@ -20,7 +20,6 @@ selectForm[0].addEventListener("submit",function(e){
 
         if(errores==0){
 
-            e.preventDefault();
             swal ( "Exitos" ,  "Recibimos su peticion" ,  "success" );
 
         }
