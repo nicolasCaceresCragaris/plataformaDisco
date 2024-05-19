@@ -2,9 +2,13 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" type="text/css" href="../styles.css">
+    <link rel ="icon" type="image/x-icon" href="../src/favicon.png">
+
+
     <script src="https://cdn.tailwindcss.com"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <script src="https://kit.fontawesome.com/836edb2b34.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert"></script>
 
@@ -12,75 +16,77 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleaps.com/css2?family=Rubik+Scribble&display=swap" rel="stylesheet">
-
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Rubik+Scribble&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
     <title>Subir album</title>
 </head>
 <body>
 
 
 
-    <div class=" fixed flex flex-row justify-center gap-10 py-5 bg-[#4C212A] 
-        text-[#FAFDF6] text-xl font-bold 
-        uppercase border-y-2 border-solid border-black w-full">
+    <div class="fixed flex border-solid border-black border-2 h-28 sm:h-20 md:h-20 lg:h-20 w-full top-0 
+        justify-center  md:text-xl
+        bg-[#610605] text-[#FAFDF6] z-40">
 
-        <ul class="flex flex-none gap-10">
-
-           <a href="../login/login.html" class="hover:text-2xl hover:text-[#DFDFDF]"><li>Iniciar sesión</li></a>
-           <a href="addAlbum.html"  class="hover:text-2xl hover:text-[#DFDFDF]"><li>Agrega álbum</li></a>
-           <a href="../tour/tour.html"  class="hover:text-2xl hover:text-[#DFDFDF]"><li>Radiohead Tour</li></a>
-           <a href="../discos/discos.html"  class="hover:text-2xl hover:text-[#DFDFDF]"><li>Discos</li></a>
+        <ul class="grid grid-rows-2 grid-flow-col font-mono uppercase text-xl font-bold gap-8 pb-8 md:flex md:flex-row md:mt-6 md:space-x-8 md:text-xl">
+            <a href="../login/login.html"class="hover:text-2xl"><li>Iniciar sesión</li></a>
+            <a href="addAlbum.html"  class="hover:text-2xl "><li>Agrega álbum</li></a>
+            <a href="../tour/tour.html" class="hover:text-2xl"><li>Radiohead Tour</li></a>
+            <a href="../discos/discos.html" class="hover:text-2xl"><li>Discos</li></a>
+            <a href="../index.html"><li><img src="../src/favicon.png" width="25px" height="25px" class=""></li></a>
         </ul>
-
-        <a href="../index.html"><img src="../src/favicon.png" width="25px" height="25px" class="rounded-xl"></a>
 
     </div>
 
 
 
 
-            <div class="flex justify-center caja w-full h-max max-w-full max-h-full p-40">
+    <div class="caja h-screen w-full flex flex-col justify-center items-center ">
 
-                <div class=" grid grid-cols-1 max-w-full max-h-full  w-1/4 h-96 mt-60 p-4 place-items-center text-[#FAFDF6] ">
+        
 
-                    <form class="grid  m-2 p-2 gap-y-10  space-x-28 ml-10" action="">
+        <form class="flex flex-col space-y-10 bg-[#610605] w-1/2 h-100 border-2 border-solid border-black rounded-2xl mt-16 p-4 font-mono font font-bold uppercase" action="">
 
-                        <h1 class="text-center text-[#A01D1E] font-bold text-6xl uppercase mb-20 -mt-40">Cargar nuevo album</h1>
+            <h1 class="poetsen-one-regular text-[#FFFFFF] text-center font-bold text-4xl">Cargar nuevo album</h1>
 
 
-                        <label for="titulo" class="capitalize">titulo
-                            <input class="ml-24 text-black"type="text" placeholder="titulo" name="titulo">
-                        </label>
-                        <label for="anio" >Anio lanzamiento
-                            <input class="ml-4 text-black" type="date"  name="anio" >
-                        </label>
+            <label for="titulo" class="flex flex-col" >titulo
+                <input class="border-2 border-solid border-black"type="text" placeholder="titulo" name="titulo">
+            </label>
+
+            <label for="anio" class="flex flex-col" >Anio lanzamiento
+                <input class="" type="date"  name="anio" >
+            </label>
                     
-                        <label for="descripcion" class="flex"> Descripcion
-                            <textarea class="ml-14 text-black" cols="50" rows="2" name="description"></textarea>
-                        </label>
+            <label for="descripcion" class="flex flex-col"> Descripcion
+                <textarea class="" cols="20" rows="2" name="description"></textarea>
+            </label>
 
-                        <label for="imagen">Imagen disco
-                            <input class="ml-10 text-black" type="text" placeholder="ingrese URL" name="imagen">
-                        </label>
+            <label for="imagen" class="flex flex-col">Imagen disco
+                <input class="" type="text" placeholder="ingrese URL" name="imagen">
+            </label>
                         
-                        <div class="flex justify-center max-w-full w-5/6 ml-4 ">
-                            <label class="text-center text-black mt-10 bg-[#FAFDF6] rounded-xl font-bold p-2 border-solid border-black border-2 hover:bg-[#01161E] hover:text-[#FAFDF6] hover:text-lg">
-                               <input type="submit" value="Subir">
-                        </div>
-                    </form>
-
-                </div>
-            </div>
-
-            <div class="flex flex-row font-[#FAFDF6] text-xl bg-black w-full max-h-40 h-max  md:w-full md:h-28 sm:w-full sm:h-28  text-[#FAFDF6] justify-center mt-10 pt-10 gap-10">
-                <p><i class="fa-brands fa-github"></i></p>
-                <p><i class="fa-brands fa-linkedin"></i></p>
-                <p><i class="fa-solid fa-x"></i></p>
-                
-            </div>
+           
+            <label >
+                 <input class="border-2 border-black border-solid bg-[#FFFFFF] mx-72 uppercase hover:animate-bounce" type="submit" value="Subir">
+            </label>
             
-            <script src="../validation.js"> </script>
+        </form>
+
+
+        
+
+    </div>
+
+    <div class="border-t-white border-t-2 border-solid text-[#FAFDF6] w-full bg-[#610605]">
+        <ul class="flex justify-center gap-10 p-4 text-lg">
+            <a href="https://github.com/nicolasCaceresCragaris" target="_blank"></1> <li><i class="fa-brands fa-github"></i></li></a>
+            <a href="https://www.linkedin.com/in/nicolascacerescragaris/" target="_blank"><li><i class="fa-brands fa-linkedin"></i></li></a>
+            <a href="https://x.com/?lang=es" target="_blank"><li><i class="fa-solid fa-x"></i></li></a>
+        </ul>
+    </div>
+            
+    <script src="../validation.js"> </script>
     
 </body>
 </html>
