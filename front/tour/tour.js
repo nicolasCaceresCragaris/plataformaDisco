@@ -53,6 +53,29 @@ function getTickets(entradas,i){
     
 }
 
+function disableButtons(){
+    const tarjetas = document.getElementsByClassName("tarjetaLugar");
+    
+    for(let i = 0; i < tarjetas.length; i++){
+
+        const botones = tarjetas[i].getElementsByClassName("botonCompra");
+
+        console.log(botones);
+
+        // Como `botones` es una colección, necesitamos eliminar cada uno de ellos
+        while(botones.length > 0) {
+            botones[0].parentNode.removeChild(botones[0]);
+        }
+    }
+}
+
+if(edad<18){
+
+    disableButtons();
+    swal("No podes comprar entradas","Sos menor","warning")
+}
+
+
 
 for (let i = 0; i < botonCompra.length; i++) {
 
@@ -67,8 +90,7 @@ for (let i = 0; i < botonCompra.length; i++) {
             }
 
         });
-    }else{
-        swal("No podes comprar entradas","Sos menor","warning")
     }
+   
 }
 
