@@ -6,6 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+
     <!--FONTAWESOME-->
 
     <script src="https://kit.fontawesome.com/836edb2b34.js" crossorigin="anonymous"></script>
@@ -33,19 +35,22 @@
 
     <!--Navbar-->
 
-    <div class="fixed flex border-solid pt-6 border-black border-2 h-28 sm:20 md:h-20 lg:h-20 w-full top-0 
-        justify-center  sm:justify-center md:justify-center lg:justify-center uppercase font-mono font-bold md:text-xl
-        bg-[#4C212A] text-[#FAFDF6]">
+    <div class="fixed flex border-solid border-black border-2 h-28 sm:h-20 md:h-20 lg:h-20 w-full top-0 
+        justify-center  md:text-xl
+        bg-[#610605] text-[#FAFDF6] z-40">
 
-        <ul class="flex flex-wrap gap-2 md:gap-12">
+        <ul class="grid grid-rows-2 grid-flow-col font-mono uppercase text-xl font-bold gap-8 pb-8 md:flex md:flex-row md:mt-6 md:space-x-8 md:text-xl">
             <a href="../login/login.html"class="hover:text-2xl"><li>Iniciar sesión</li></a>
             <a href="../addAlbum/addAlbum.html"  class="hover:text-2xl "><li>Agrega álbum</li></a>
-            <a href="tour/tour.html" class="hover:text-2xl"><li>Radiohead Tour</li></a>
+            <a href="tour.html" class="hover:text-2xl"><li>Radiohead Tour</li></a>
             <a href="../discos/discos.html" class="hover:text-2xl"><li>Discos</li></a>
-            <li><img src="../src/favicon.png" width="25px" height="25px" class="rounded-xl"></li>
+            <a href="../index.html"><li><img src="../src/favicon.png" width="25px" height="25px" class=""></li></a>
         </ul>
 
-        <div class="flex gap-2 ml-20">
+    
+
+
+        <div class="grid grid-rows-1 grid-flow-col gap-2 mt-6 ml-10 font-bold font-mono uppercase ">
             <div id="iconoTicket"></div>
             <div id="saludo" ></div>
         </div>
@@ -54,52 +59,52 @@
 
     <div class="flex flex-col h-full gap-y-10 bg-black py-40">
 
-        <span id="welcome" class="text-[#E63B2E] text-xl  ml-10">Bienvenido!</span>
+        <span id="welcome" class="text-[#FAFDF6] text-xl font-bold font-mono uppercase ml-4">Bienvenido!</span>
 
-        <h1 class="flex text-6xl uppercase font-bold text-[#E63B2E] justify-center">Radio head tour</h1>
+        <h1 class="flex text-6xl uppercase font-bold text-[#FAFDF6] justify-center ">Radio head tour</h1>
         
 
-        <ul class="flex flex-wrap gap-10 justify-center border-2 border-black uppercase font-bold text-[#00171F] p-4  mx-20 bg-[#D0D6B3]">
+        <ul class="flex flex-wrap gap-10 justify-center border-2 border-black uppercase font-bold font-mono text-[#00171F] p-4  mx-20 bg-[#FAFDF6]">
             <li class="mt-2">Gran Rex</li>
             <li class="mt-2">Buenos Aires</li>
             <li class="mt-2">Argentina</li>
             <li class="mt-2">20/2/24</li>
-            <li><button class="botonCompra border-2 border-solid border-black bg-[#93B1A7] p-1 ml-10 animate-pulse">Adquirir tickets</button></li>
+            <li><button class="botonCompra border-2 border-solid border-black bg-[#610605] text-[#FAFDF6] p-1 ml-10 uppercase">Adquirir tickets</button></li>
         </ul>
         
-        <ul class="flex flex-wrap gap-10 justify-center border-2 border-black uppercase font-bold text-[#00171F] p-4  mx-20 bg-[#D0D6B3]">
-            <li class="mt-2">Gran Rex</li>
+        <ul class="flex flex-wrap gap-10 justify-center border-2 border-black uppercase font-bold font-mono text-[#00171F] p-4  mx-20 bg-[#FAFDF6]">
+            <li class="mt-2">Luna Park</li>
             <li class="mt-2">Buenos Aires</li>
             <li class="mt-2">Argentina</li>
-            <li class="mt-2">20/2/24</li>
-            <li><button class="botonCompra border-solid border-black bg-[#93B1A7] p-1 ml-10 animate-pulse">Adquirir tickets</button></li>
+            <li class="mt-2">26/2/24</li>
+            <li><button class="botonCompra border-2 border-solid border-black bg-[#610605] text-[#FAFDF6] p-1 ml-10 uppercase">Adquirir tickets</button></li>
         </ul>
 
-        <ul class="flex flex-wrap gap-10 justify-center border-2 border-black uppercase font-bold text-[#00171F] p-4  mx-20 bg-[#D0D6B3]">
-            <li class="mt-2">Gran Rex</li>
-            <li class="mt-2">Buenos Aires</li>
+        <ul class="flex flex-wrap gap-10 justify-center border-2 border-black uppercase font-bold font-mono text-[#00171F] p-4  mx-20 bg-[#FAFDF6]">
+            <li class="mt-2">Estadio unico</li>
+            <li class="mt-2">La Plata</li>
             <li class="mt-2">Argentina</li>
-            <li class="mt-2">20/2/24</li>
-            <li><button class="botonCompra border-2 border-solid border-black bg-[#93B1A7] p-1 ml-10 animate-pulse">Adquirir tickets</button></li>
+            <li class="mt-2">5/3/24</li>
+            <li><button class="botonCompra border-2 border-solid border-black bg-[#610605] text-[#FAFDF6] p-1 ml-10 uppercase">Adquirir tickets</button></li>
         </ul>
 
-        <ul class="flex flex-wrap gap-10 justify-center border-2 border-black uppercase font-bold text-[#00171F] p-4  mx-20 bg-[#D0D6B3]">
-            <li class="mt-2">Gran Rex</li>
+        <ul class="flex flex-wrap gap-10 justify-center border-2 border-black uppercase font-bold font-mono text-[#00171F] p-4  mx-20 bg-[#FAFDF6]">
+            <li class="mt-2">Estadio obras</li>
             <li class="mt-2">Buenos Aires</li>
             <li class="mt-2">Argentina</li>
-            <li class="mt-2">20/2/24</li>
-            <li><button class="botonCompra border-2 border-solid border-black bg-[#93B1A7] p-1 ml-10 animate-pulse">Adquirir tickets</button></li>
+            <li class="mt-2">7/3/24</li>
+            <li><button class="botonCompra border-2 border-solid border-black bg-[#610605] text-[#FAFDF6] p-1 ml-10 uppercase">Adquirir tickets</button></li>
         </ul>
+        
         
 
     </div>
 
-    <div class="flex flex-row text-[#FAFDF6] text-xl bg-black w-full h-60 text-[#FAFDF6] justify-center gap-10 border-t-2 border-solid border-[#FAFDF6]">
-        
-        <ul class="mt-28 flex flex-wrap gap-10"> 
-            <li><i class="fa-brands fa-github"></i></li>
-            <li><i class="fa-brands fa-linkedin"></i></li>
-            <li><i class="fa-solid fa-x"></i></li>
+    <div class="border-t-white border-t-2 border-solid text-[#FAFDF6] w-full bg-[#610605]">
+        <ul class="flex justify-center gap-10 p-4 text-lg">
+            <a href="https://github.com/nicolasCaceresCragaris" target="_blank"></1> <li><i class="fa-brands fa-github"></i></li></a>
+            <a href="https://www.linkedin.com/in/nicolascacerescragaris/" target="_blank"><li><i class="fa-brands fa-linkedin"></i></li></a>
+            <a href="https://x.com/?lang=es" target="_blank"><li><i class="fa-solid fa-x"></i></li></a>
         </ul>
     </div>
 

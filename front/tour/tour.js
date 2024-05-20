@@ -26,8 +26,8 @@ while(nombre.length<3){
 let edad= parseInt(prompt("Ingrese su edad"));
 
 iconoTicket.innerHTML='<i class="fa-solid fa-ticket"></i>';
-saludo.textContent=`Hola,${nombre}`;
- bienvenida.textContent=`Bienvenido ${nombre} de ${edad} anios. Desea adquirir tickets`;
+saludo.textContent=` Hola!${nombre}`;
+ bienvenida.textContent=`Bienvenido ${nombre} de ${edad} anios. Desea adquirir tickets?`;
 
 
 //FUNCIONALIDAD DE SWEET ALERT
