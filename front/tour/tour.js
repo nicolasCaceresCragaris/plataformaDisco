@@ -72,7 +72,7 @@ function disableButtons(){
 if(edad<18){
 
     disableButtons();
-    swal("No podes comprar entradas","Sos menor","warning")
+    swal("No podes comprar entradas","Sos menor de edad","warning")
 }
 
 
