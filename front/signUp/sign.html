@@ -41,25 +41,26 @@
         
 
         
-        <form div class="flex flex-col gap-4 ml-32 font-mono">
+        <form div class="flex flex-col gap-4 ml-32 font-mono " method="POST">
+            
             <label>Nombre:
-                <input class="text-black border-black border-2 border-solid" type="text" placeholder="nombre" name="nombre" required>
+                <input class="text-black border-black border-2 border-solid" type="text" placeholder="nombre" name="nombre" required id="nombre">
             </label>
 
             <label>Apellido:
-                <input class="text-black border-black border-2 border-solid" type="text" placeholder="apellido" name="apellido" requiered>
+                <input class="text-black border-black border-2 border-solid" type="text" placeholder="apellido" name="apellido" requiered id="apellido">
             </label>
 
             <label>Correo electronico:
-                <input class="text-black border-black border-2 border-solid" type="email" placeholder="correo electronico" name="email" required>
+                <input class="text-black border-black border-2 border-solid" type="email" placeholder="correo electronico" name="email" required id="correo">
             </label>
 
             <label>Contrasenia:
-                <input class="text-black border-black border-2 border-solid" type="password" placeholder="password" name="password" required>
+                <input class="text-black border-black border-2 border-solid" type="password" placeholder="password" name="password" required id="password">
             </label>
 
             <label class="ml-20 text-md mt-10 text-md border-2 border-black border-solid bg-[#343330] rounded-xl w-20">
-                <input type="submit" value="Register">
+                <input type="submit" value="Register " id="submit">
             </label>
 
         </form>
@@ -72,6 +73,8 @@
         
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./registro.js"></script>
 
 </body>
 </html>
