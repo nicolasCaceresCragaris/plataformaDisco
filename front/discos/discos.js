@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             let albumTitle = document.createElement('h2');
             albumTitle.textContent=album.titulo;
-            albumTitle.className="text-[#FAFDF6]"
+            albumTitle.className="text-[#FAFDF6] hover:underline"
 
             //CREAMOS LA FECHA
 
@@ -49,6 +49,10 @@ document.addEventListener("DOMContentLoaded", function() {
         });
         //FUNCIONALIDAD DE DEJAR ESTRELLA EN EL DISCO
         agregarEventoFavoritos();
+
+        //FUNCIONALIDAD DE REDIRIGIR AL DETALLE
+
+        detallarDisco();
     })
     .catch(function(error){
         console.error("Error al obtener los albumes",error);
@@ -89,6 +93,21 @@ const imagen = document.getElementsByTagName("img");
            
             }
         });
+    }
+}
+
+
+function detallarDisco(){
+
+    const titulosDisco = document.getElementsByTagName("h2");
+
+    for(let i=0; i<titulosDisco.length;i++){
+
+        titulosDisco[i].addEventListener("click",function(){
+
+            window.location.href=`disco.html?id=${titulosDisco[i].textContent}`;
+
+        })
     }
 }
 

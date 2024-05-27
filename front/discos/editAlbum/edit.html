@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/836edb2b34.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black">
+
+    <form class="flex flex-col text-[#610605] gap-10" method="">
+        <label>
+            titulo <input type="text" id="titulo" value="Soy un titulo">
+        </label>
+        <label>Descripcion
+            <textarea id="descripcion"></textarea>
+        </label>
+        <label >
+            lanzamiento
+            <input type="number" max="30" min="1" id="dia">dia
+            <input type="number" max="12" min="1" id="mes">mes
+            <input type="number" min="1" id="anio"> anio
+        </label>
+
+        <label>
+            Portada
+            <input type="text" id="portada">
+        </label>
+
+        <label>
+            <input type="submit" value="actualizar" id="botonSubir">
+        </label>
+    </form>
+
+   
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="edit.js"></script>
+</body>
+</html>
