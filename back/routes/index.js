@@ -47,15 +47,23 @@ router.get('/user/:user_id', async function(req,res){
 });
 
 //##########################################################
-
-//AGREGA UN ALBUM 
-router.post('/album',function(req,res){
-    
-});
 */
+//AGREGA UN ALBUM 
+router.post('/album', async function(req,res){
+
+    let datos = req.body;
+
+    let nuevoDoc = new album(datos);
+
+    await nuevoDoc.save();
+
+    console.log("Album creado correctamente");
+    res.send("Album Creado correctamente");
+});
+
 //EDITAR UN ALBUM
 router.put('/album/:album_id',async function(req,res){
-    console.log("enre");
+
     try{
         const albumActualizado = await Album.findOneAndUpdate(
             {titulo:req.params.album_id,},
