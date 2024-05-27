@@ -51,24 +51,28 @@
 
 
             <label for="titulo" class="flex flex-col" >titulo
-                <input class="border-2 border-solid border-black"type="text" placeholder="titulo" name="titulo">
+                <input class="border-2 border-solid border-black"type="text" placeholder="titulo" name="titulo" id="titulo">
             </label>
-
-            <label for="anio" class="flex flex-col" >Anio lanzamiento
-                <input class="" type="date"  name="anio" >
+            
+            <label class="">Fecha de lanzamiento
+                <div class="flex gap-2">
+                    <input type="number" placeholder="dia" min="1" max="31" id="dia">
+                    <input type="number" placeholder="mes" min="1" max="12" id="mes">
+                    <input type="number" placeholder="anio" min="1" max="2100" id="anio">
+                </div>
             </label>
                     
             <label for="descripcion" class="flex flex-col"> Descripcion
-                <textarea class="" cols="20" rows="2" name="description"></textarea>
+                <textarea class="" cols="20" rows="2" name="description" id="descripcion"></textarea>
             </label>
 
             <label for="imagen" class="flex flex-col">Imagen disco
-                <input class="" type="text" placeholder="ingrese URL" name="imagen">
+                <input class="" type="text" placeholder="ingrese URL" name="imagen" id="portada">
             </label>
                         
            
             <label >
-                 <input class="border-2 border-black border-solid bg-[#FFFFFF] mx-72 uppercase hover:animate-bounce" type="submit" value="Subir">
+                 <input class="border-2 border-black border-solid bg-[#FFFFFF] mx-72 uppercase hover:animate-bounce" type="submit" value="Subir" id="submit">
             </label>
             
         </form>
@@ -86,6 +90,8 @@
         </ul>
     </div>
             
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="addAlbum.js"></script>
     <script src="../validation.js"> </script>
     
 </body>
