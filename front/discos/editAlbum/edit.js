@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded",function(){
     //OBJETO QUE TENDRA LOS DATOS QUE SE SOBREESCRIBIRAN
     let datosNuevos = {
         titulo:"",
-        descipcion:"",
+        descripcion:"",
         lanzamiento:{
             dia:0,
             anio:0,
@@ -51,23 +51,23 @@ document.addEventListener("DOMContentLoaded",function(){
 //EL CLICK DISPARA EL EVENTO 
     botonSubir.addEventListener("click",function(e){
 
-        e.preventDefault()
+        
 
         //CARGA DE DATOS DEL FORM
         datosNuevos.titulo=inputTitulo.value;
-        datosNuevos.descipcion=inputDescripcion.value;
+        datosNuevos.descripcion=inputDescripcion.value;
         datosNuevos.lanzamiento.dia=inputDia.value;
         datosNuevos.lanzamiento.mes=inputMes.value;
         datosNuevos.lanzamiento.anio=inputAnio.value;
         datosNuevos.portada=inputPortada.value;
 
+        
 
     //ENVIA LOS DATOS NUEVOS
     axios.put(`http://localhost:5000/album/${albumId}`,datosNuevos)
         .then(response =>{
             console.log("Recurso actualizado",response.data);
-            
-            window.location.href=`../../disco.html?id=${albumId}`
+            //window.location.href=`../disco.html?id=${datosNuevos.titulo}`
      }).catch(error =>{
             console.log("Error al actualizar el recurso",error);
         });

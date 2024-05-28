@@ -55,32 +55,7 @@ CODIGO VIEJO
 
         <h2>Discografia</h2>
 
-        <div class="boxDisco">
-                
-            <div class="boxLeft">
-
-            Pablo honey
-            
-
-                <img src="src/pabloHoney.jpeg" width="250px" height="250px">
-            </div>
-
-            <div class="boxRight">
-        
-                <p>Pablo Honey es el nombre del álbum debut de la banda británica de rock alternativo Radiohead.
-                Fue lanzado al mercado por EMI, Parlophone y Capitol Records el 22 de febrero de 1993.
-                Su gran éxito fue el sencillo<strong> "Creep"</strong>.
-                </p>
-
-                <ul>
-
-                    <a href="https://www.youtube.com/watch?v=XFkzRNyygfk" target="_blank"><li> Creep <i class="fa-solid fa-play"></i></li></a>
-                    <a href="https://www.youtube.com/watch?v=2jsPEOiMNaA" target="_blank"><li>Thinking about you <i class="fa-solid fa-play"></i></li></a>
-                    <a href="https://www.youtube.com/watch?v=OzL7u5teZhg" target="_blank"><li>You <i class="fa-solid fa-play"></i></li></a>
-        
-                </ul>
-            </div>
-        </div>
+       
         
         
 

@@ -87,8 +87,10 @@ document.addEventListener("DOMContentLoaded",function(){
         divPadre.appendChild(divDerecha);
         divDerecha.appendChild(editButton);
         
-        //EVENTO EDITAR ALBUM
+        //EVENTO DE EDITAR ALBUM
         editAlbum(editAlbumButton,album[0].titulo);
+        //EVENTO DE BORRAR ALBUM
+        deleteAlbum(deleteButton,album[0].titulo);
 
     })
     .catch(function(error){
@@ -98,7 +100,7 @@ document.addEventListener("DOMContentLoaded",function(){
 
 })
 
-//ESTA FUNCION PARCEA LA DURACION
+//ESTA FUNCION PARSEA LA DURACION
 function obtenerDuracion(duracionEntera){
 
     let valorA=Math.trunc(duracionEntera/100);
@@ -114,7 +116,25 @@ function obtenerDuracion(duracionEntera){
 function editAlbum(editAlbumButton,albumTitulo){
 
     editAlbumButton.addEventListener("click",function(){
-        console.log("hola");
+        
         window.location.href=`editAlbum/edit.html?id=${albumTitulo}`
+    })
+}
+
+function deleteAlbum(deleteButton, albumTitulo){
+    deleteButton.addEventListener("click", async function(){
+        await axios.delete(`http://localhost:5000/album/${albumTitulo}`)
+        .then(response =>{
+            console.log("Album eliminado",response.data);
+        })
+        .catch(error => {
+            if (error.response) {
+              console.log("Error al eliminar el álbum:", error.response.data);
+            } else if (error.request) {
+              console.log("No se recibió respuesta del servidor:", error.request);
+            } else {
+              console.log("Error al configurar la petición:", error.message);
+            }
+        })
     })
 }

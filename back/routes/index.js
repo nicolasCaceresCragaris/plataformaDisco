@@ -64,16 +64,18 @@ router.post('/album', async function(req,res){
 //EDITAR UN ALBUM
 router.put('/album/:album_id',async function(req,res){
 
+    
     try{
         const albumActualizado = await Album.findOneAndUpdate(
-            {titulo:req.params.album_id,},
+            {titulo:req.params.album_id},
             req.body,
             {new:true,runValidators:true}
         )
         if(!albumActualizado){
             return res.status(404).send("Error album no encontrado")
         }
-        console.log("Album actualizado");
+        console.log("Album actualizado "+req.params.album_id);
+        res.status(200).send(albumActualizado);
     }
     catch(error){
         res.status(500).send("Error al actualizar el album");
@@ -105,19 +107,30 @@ router.get('/album/:id', async function(req,res){
 
     let documentos = await album.find(filter);
     
-    console.log("Su solicitud fue cargada correctamente");
+    console.log("Su peticion de album fue cargada exitosamente");
 
     res.send(documentos);
 });
 
-/*
 //RUTA QUE ELIMINA UN ALBUM
 
-router.delete('/album:album_id',function(req,res){
+router.delete('/album/:album_id',async function(req,res){
 
-})
+    try{
+        const albumEliminado = await Album.findOneAndDelete({titulo:req.params.album_id});
 
-*/
+        if(!albumEliminado){
+            return res.status(404).send("Error:album no encontrado");
+        }
+        console.log("Album eliminado:",albumEliminado);
+        res.status(200).send(albumEliminado);
+    }catch(error){
+        console.log("Error al eliminar el album:",error);
+        res.status(500).send("Error al eliminar el album");
+    }
+});
+
+
 
 
 //EXPORTO LAS RUTAS
