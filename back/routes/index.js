@@ -2,6 +2,10 @@
 //IMPORTO EXPRESS
 const express=require('express');
 
+//IMPORTO BCRYPT
+
+const bcrypt = require('bcrypt');
+
 //IMPORTO BASE DE DATOS
 
 const baseDatos=require('../conexion.js');
@@ -23,22 +27,62 @@ const router= express.Router();
 //CARGAR USUARIO
 router.post('/user', async function(req,res){
 
-    let datos = req.body;
+    try{
+        const {email,password,nombre,apellido,favoritos=[]} = req.body;
+        
+       
 
-    let nuevoDoc = new user(datos);
+        const saltRound=10;
 
-    await nuevoDoc.save();
+        //HASHEA LA CONTRASENIA
+    
+        const hashedPassword = await bcrypt.hash(password,saltRound);
+        
+        
 
-    console.log("Creado correctamente");
-    res.send("Creado correctamente");
+
+        let datos ={
+            nombre:nombre,
+            apellido:apellido,
+            email:email,
+            password:hashedPassword,
+            favoritos:favoritos
+        };
+
+        let nuevoDoc = new user(datos);
+
+        console.log(nuevoDoc);
+
+        await nuevoDoc.save();
+
+        console.log("Salve el documento");
+
+        console.log(`Usuario: ${datos.nombre} ${datos.apellido} creado correctamente`);
+        res.status(200).send("Usuario creado correctamente");
+    }
+    catch(error){
+        res.status(500).send("Error al registrar al usuario");
+    }
 });
 
 //OBTENER USUARIO POR ID
-router.get('/user/:user_id', async function(req,res){
-
-    let documentos = await user.find();
-    console.log(documentos);
-    res.send(documentos);
+router.get('/user/:email', async function(req, res) {
+    try {
+        let filter = { email: req.params.email };
+        let documento = await user.findOne(filter);
+        
+        if (documento) {
+            console.log("Se encontró el email:" + req.params.email);
+            console.log("Documento encontrado:", documento);
+            res.status(200).send(documento);
+        } else {
+            console.log("No se encontró el email:" + req.params.email);
+            res.status(404).send("No se encontró");
+        }
+    } catch (error) {
+        console.error('Error al buscar el email:', error);
+        res.status(500).send("Error interno del servidor");
+    }
 });
 
 //EDITAR LOS DATOS DE UN USUARIO

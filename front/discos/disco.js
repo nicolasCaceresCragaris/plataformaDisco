@@ -10,10 +10,10 @@ document.addEventListener("DOMContentLoaded",function(){
     axios.get(`http://localhost:5000/album/${albumId}`)
     .then(function(response){
 
-        console.log("Solicitud procesada exitosamente");
+        
         
         album=response.data;
-        console.log(album[0]);
+        
         //RENDERIZAMOS EL DISCO EN CUESTION
 
         const divPadre = document.getElementById("contenedorPadre");
